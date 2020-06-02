@@ -65,6 +65,19 @@ Please make sure to update the tests as appropriate.
 [betrcode](https://gist.github.com/betrcode/0248f0fda894013382d7)
 
 [ActiveState](http://code.activestate.com/recipes/577769-tcp-port-checker/)
+
+## FAQ
+
+1. Hope it is not a virus?
+A: It is not. If you are worried about it, please download the src folder and use the python script. The exe is to make it easy for people without Python coding knowledge.
+
+2. Why is the exe so big?
+A: It has to do with how Python creates the package. Since the .exe should run standalone on your machine, python bundles all the dependencies into it. This includes modules like numpy, pandas, socket, etc. Hence the big file size.
+
+3. This can be done using simple shell or bat command. Why to use Python for this?
+A: There are better ways to do it ofcourse. But I am studying Python and hence this is just me solving my day-to-day problem using the language.
+
+
 ## Author
 
 [SudhenduP](https://gist.github.com/SudhenduP)
