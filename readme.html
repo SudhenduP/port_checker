@@ -1,0 +1,70 @@
+<h1 id="port-checking-for-multiple-serversports-using-python">Port checking for multiple servers/ports using Python</h1>
+<p>port_checker is a python based code using the following module to check if ports are open on many servers.</p>
+<h2 id="problem-statement">Problem Statement</h2>
+<p>In my day to day work, I always need the check whether port access to a server is open on not. The usual way to do this is telnet. But many times, the list of server-port could gets huge, and checking each individually was taking a lot of effort. Hence this tool.</p>
+<h2 id="information">Information</h2>
+<h3 id="this-code-is-packaged-into-a-.exe-and-hence-can-run-standalone.">This code is packaged into a .exe and hence can run standalone.</h3>
+<h4 id="please-verify-if-you-have-the-following">Please verify if you have the following:</h4>
+<p>exe: port_checker.exe</p>
+<p>file: input/in_server_port.csv</p>
+<h4 id="example-of-input-for-your-in_server_port.csv-file.-please-dont-change-the-header-name">Example of input for your in_server_port.csv file. Please don't change the header name</h4>
+<table>
+<thead>
+<tr class="header">
+<th align="left">IP</th>
+<th align="left">Port</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">10.158.102.36</td>
+<td align="left">3389</td>
+</tr>
+<tr class="even">
+<td align="left">google.com</td>
+<td align="left">8777</td>
+</tr>
+<tr class="odd">
+<td align="left">localhost</td>
+<td align="left">80</td>
+</tr>
+</tbody>
+</table>
+<h4 id="source-code-available-in-src-folder.">Source Code available in src/ folder.</h4>
+<p>Please only use it if you want to change the script. The .exe is a standalone executable.</p>
+<h2 id="usage">Usage</h2>
+<pre class="exe"><code>port_checker.exe</code></pre>
+<h2 id="output">Output</h2>
+<table>
+<thead>
+<tr class="header">
+<th align="left">IP</th>
+<th align="left">Port</th>
+<th align="left">Status</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">10.158.102.36</td>
+<td align="left">3389</td>
+<td align="left">Connection to 10.158.102.36 on port 3389 failed: [WinError 10060] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond</td>
+</tr>
+<tr class="even">
+<td align="left">google.com</td>
+<td align="left">8777</td>
+<td align="left">Connection to google.com on port 8777 failed: [WinError 10060] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond</td>
+</tr>
+<tr class="odd">
+<td align="left">localhost</td>
+<td align="left">80</td>
+<td align="left">Connected to localhost on port 80</td>
+</tr>
+</tbody>
+</table>
+<h2 id="contributing">Contributing</h2>
+<p>Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.</p>
+<p>Please make sure to update the tests as appropriate.</p>
+<h2 id="references">References</h2>
+<p><a href="https://gist.github.com/betrcode/0248f0fda894013382d7">betrcode</a></p>
+<p><a href="http://code.activestate.com/recipes/577769-tcp-port-checker/">ActiveState</a> ## Author</p>
+<p><a href="https://gist.github.com/SudhenduP">SudhenduP</a></p>
