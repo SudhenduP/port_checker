@@ -1,7 +1,7 @@
 # Port checking for multiple servers/ports using Python
 
 
-port_checker is a python based code using the following module to check if ports are open on many servers.
+port_checker is a python based code and executable to check if tcp port status for multiple servers and port.
 
 
 ## Problem Statement
