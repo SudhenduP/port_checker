@@ -10,7 +10,7 @@ In my day to day work, I always need the check whether port access to a server i
 
 ## Information
 
-### This code is packaged into a .exe and hence can run standalone. 
+### This code is packaged into a .exe and hence can run standalone (check tools folder). 
 
 #### Please verify if you have the following:
 
@@ -32,6 +32,14 @@ file: input/in_server_port.csv
 Please only use it if you want to change the script. The .exe is a standalone executable.
 
 ## Usage
+
+1. Download the tools folders.
+
+2. Open command prompt.
+
+3. Navigate to downloaded folder.
+
+4. Run the below command: 
 
 ```exe
 port_checker.exe
