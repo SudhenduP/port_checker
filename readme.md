@@ -1,7 +1,7 @@
 # Port checking for multiple servers/ports using Python
 
 
-port_checker is a python based code and executable to check if tcp port status for multiple servers and port.
+port_checker is a python based code and executable to check tcp port status for multiple servers and ports.
 
 
 ## Problem Statement
@@ -35,11 +35,9 @@ Please only use it if you want to change the script. The .exe is a standalone ex
 
 1. Download the tools folders.
 
-2. Open command prompt.
+2. Change the input file as mentioned above.
 
-3. Navigate to downloaded folder.
-
-4. Run the below command: 
+3. Open command prompt and run the below command: 
 
 ```exe
 port_checker.exe
@@ -69,14 +67,20 @@ Please make sure to update the tests as appropriate.
 ## FAQ
 
 1. Hope it is not a virus?
+
 A: It is not. If you are worried about it, please download the src folder and use the python script. The exe is to make it easy for people without Python coding knowledge.
 
 2. Why is the exe so big?
+
 A: It has to do with how Python creates the package. Since the .exe should run standalone on your machine, python bundles all the dependencies into it. This includes modules like numpy, pandas, socket, etc. Hence the big file size.
 
 3. This can be done using simple shell or bat command. Why to use Python for this?
+
 A: There are better ways to do it ofcourse. But I am studying Python and hence this is just me solving my day-to-day problem using the language.
 
+4. How does will it take to run?
+
+A: Depending on the number of entries you have in the input file, tcp socket connection can take sometime. The code has timeout set (40 seconds) for each entries. Usually socket connection is established, failed long before it.
 
 ## Author
 
